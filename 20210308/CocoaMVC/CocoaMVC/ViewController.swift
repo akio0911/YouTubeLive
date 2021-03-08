@@ -16,14 +16,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        NotificationCenter.default.addObserver(
-            forName: .counterModelDidChangeCount,
-            object: nil,
-            queue: OperationQueue.main,
-            using: { [weak self] _ in
-                self?.updateCountLabel()
-            }
-        )
+        counterModel.delegate = self
+
+//        NotificationCenter.default.addObserver(
+//            forName: .counterModelDidChangeCount,
+//            object: nil,
+//            queue: OperationQueue.main,
+//            using: { [weak self] _ in
+//                self?.updateCountLabel()
+//            }
+//        )
     }
 
     private func updateCountLabel() {
@@ -39,12 +41,24 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: CounterModelDelegate {
+    func didChangeCount() {
+        updateCountLabel()
+    }
+}
+
 extension Notification.Name {
     static let counterModelDidChangeCount
         = Notification.Name("CounterModel.didChangeCount")
 }
 
+protocol CounterModelDelegate: AnyObject {
+    func didChangeCount()
+}
+
 class CounterModel {
+    weak var delegate: CounterModelDelegate?
+
     private(set) var count = 0
 
     func increase() {
@@ -58,9 +72,11 @@ class CounterModel {
     }
 
     private func notify() {
-        NotificationCenter.default.post(
-            name: .counterModelDidChangeCount,
-            object: nil
-        )
+//        NotificationCenter.default.post(
+//            name: .counterModelDidChangeCount,
+//            object: nil
+//        )
+
+        delegate?.didChangeCount()
     }
 }
