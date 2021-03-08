@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E52C738125F6254300F943C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C738025F6254300F943C0 /* AppDelegate.swift */; };
 		E52C738325F6254300F943C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C738225F6254300F943C0 /* SceneDelegate.swift */; };
-		E52C738525F6254300F943C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C738425F6254300F943C0 /* ViewController.swift */; };
 		E52C738825F6254300F943C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52C738625F6254300F943C0 /* Main.storyboard */; };
 		E52C738A25F6254400F943C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52C738925F6254400F943C0 /* Assets.xcassets */; };
 		E52C738D25F6254400F943C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52C738B25F6254400F943C0 /* LaunchScreen.storyboard */; };
+		E52C739625F635E200F943C0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C739525F635E200F943C0 /* TableViewController.swift */; };
+		E52C739A25F638DF00F943C0 /* DoubleImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C739925F638DF00F943C0 /* DoubleImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E52C737D25F6254300F943C0 /* 20210308CustomCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 20210308CustomCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52C738025F6254300F943C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E52C738225F6254300F943C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E52C738425F6254300F943C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E52C738725F6254300F943C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E52C738925F6254400F943C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52C738C25F6254400F943C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E52C738E25F6254400F943C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52C739525F635E200F943C0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E52C739925F638DF00F943C0 /* DoubleImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				E52C738025F6254300F943C0 /* AppDelegate.swift */,
 				E52C738225F6254300F943C0 /* SceneDelegate.swift */,
-				E52C738425F6254300F943C0 /* ViewController.swift */,
+				E52C739525F635E200F943C0 /* TableViewController.swift */,
+				E52C739925F638DF00F943C0 /* DoubleImageCell.swift */,
 				E52C738625F6254300F943C0 /* Main.storyboard */,
 				E52C738925F6254400F943C0 /* Assets.xcassets */,
 				E52C738B25F6254400F943C0 /* LaunchScreen.storyboard */,
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E52C738525F6254300F943C0 /* ViewController.swift in Sources */,
 				E52C738125F6254300F943C0 /* AppDelegate.swift in Sources */,
 				E52C738325F6254300F943C0 /* SceneDelegate.swift in Sources */,
+				E52C739A25F638DF00F943C0 /* DoubleImageCell.swift in Sources */,
+				E52C739625F635E200F943C0 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
