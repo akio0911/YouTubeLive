@@ -1,7 +1,7 @@
 import UIKit
 
-//let numbers = [1, 3, 5, 7, 9]
-//
+let numbers = [1, 3, 5, 7, 9]
+
 //let names = ["sato", "suzuki", "tanaka"]
 //
 //var emptyDoubles: [Double] = []
@@ -69,25 +69,25 @@ import UIKit
 //print(copy)
 
 
-class Reference {
-    var value: Int
-    var name: String
-
-    init(_ value: Int, _ name: String) {
-        self.value = value
-        self.name = name
-    }
-}
-
-var numbers1 = [Reference(10, "OldA"), Reference(10, "OldB")]
-var numbers2 = numbers1
-
-numbers1[0].value = 100
-// numbers1[0] と numbers2[0] は同じインスタンスを指している
-print(numbers2[0].value, numbers2[0].name)
-
-numbers1[0] = Reference(10, "NewC")
-// numbers1[0] は新しいインスタンスを指している
-print(numbers1[0].value, numbers1[0].name)
-// numbers2[0] は古いインスタンスを指している
-print(numbers2[0].value, numbers2[0].name)
+//class Reference {
+//    var value: Int
+//    var name: String
+//
+//    init(_ value: Int, _ name: String) {
+//        self.value = value
+//        self.name = name
+//    }
+//}
+//
+//var numbers1 = [Reference(10, "OldA"), Reference(10, "OldB")]
+//var numbers2 = numbers1
+//
+//numbers1[0].value = 100
+//// numbers1[0] と numbers2[0] は同じインスタンスを指している
+//print(numbers2[0].value, numbers2[0].name)
+//
+//numbers1[0] = Reference(10, "NewC")
+//// numbers1[0] は新しいインスタンスを指している
+//print(numbers1[0].value, numbers1[0].name)
+//// numbers2[0] は古いインスタンスを指している
+//print(numbers2[0].value, numbers2[0].name)
