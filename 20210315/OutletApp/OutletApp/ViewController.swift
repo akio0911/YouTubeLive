@@ -9,5 +9,5 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var label: UILabel!
+    @IBOutlet weak var label: UILabel!
 }
