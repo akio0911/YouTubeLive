@@ -41,6 +41,7 @@ final class ViewController: UIViewController {
 
     private func refreshTableView() {
         items = makeItems()
+//        items = items + [Item(name: "リンゴ")]
         tableView.reloadData()
         refreshControl.endRefreshing()
     }
