@@ -9,7 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label999: UILabel!
+
 }
 
 class SecondViewController: UIViewController {
