@@ -11,3 +11,20 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
 }
+
+class SecondViewController: UIViewController {
+
+    @IBOutlet var labels: [UILabel]!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        for label in labels {
+            label.text = "Hello"
+        }
+
+        labels[0].text = "Hello"
+        labels[1].text = "Hello"
+        labels[2].text = "Hello"
+    }
+}
