@@ -20,9 +20,6 @@
                                 <rect key="frame" x="184" y="118" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TM6-3M-beG"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
