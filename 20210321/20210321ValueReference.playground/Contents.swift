@@ -39,3 +39,30 @@ sato.age += 1
 sato.age // 21
 
 copyOfSato.age // 20
+
+
+// クラスはコピーされない
+
+class Counter {
+    var count: Int = 0
+}
+
+var counter = Counter()
+counter.count // 0
+
+var referenceToCounter = counter
+referenceToCounter.count // 0
+
+counter.count += 1
+
+counter.count // 1
+referenceToCounter.count // 1
+
+func plusOne(_ counter: Counter) {
+    counter.count += 1
+}
+
+plusOne(counter)
+
+counter.count // 2
+referenceToCounter.count // 2
