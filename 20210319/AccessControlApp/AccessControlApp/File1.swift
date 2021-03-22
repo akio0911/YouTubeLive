@@ -20,6 +20,7 @@ struct Type1 {
 
 struct Type3 {
     func f3() {
+        Type1().a
         Type1().b // fileprivateなのでアクセスできる
 
         Repository().fetch1()

@@ -14,11 +14,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(button.actions(forTarget: self, forControlEvent: .touchUpInside))
-//
-//        button.addTarget(self, action: #selector(didTapButton(_:)), for: .touchUpInside)
-//
-//        print(button.actions(forTarget: self, forControlEvent: .touchUpInside))
+        print(
+            button.actions(
+                forTarget: self,
+                forControlEvent: .touchUpInside
+            )
+        )
+
+        button.addTarget(
+            self,
+            action: #selector(didTapButton(_:)),
+            for: .touchUpInside
+        )
+
+        print(
+            button.actions(
+                forTarget: self,
+                forControlEvent: .touchUpInside
+            )
+        )
     }
 
     @IBAction func didTapButton(_ sender: Any) {
