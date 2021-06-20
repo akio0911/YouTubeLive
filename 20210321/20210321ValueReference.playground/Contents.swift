@@ -16,8 +16,8 @@ copyOfA // 10
 
 var b: Int = 10
 func plusOne(_ copy: Int) -> Int {
-    // Left side of mutating operator isn't mutable: 'num' is a 'let' constant
-    //num += 1
+    // Left side of mutating operator isn't mutable: 'copy' is a 'let' constant
+    // copy += 1
 
     return copy + 1
 }
