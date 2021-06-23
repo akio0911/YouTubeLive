@@ -30,3 +30,42 @@ func f3(value: Int?) -> String {
 }
 f3(value: 10) // "10"
 //f3(value: nil) // crash
+
+
+class ViewController: UIViewController {
+    enum Operator {
+        case add
+        case sub
+        case mul
+        case div
+
+        init?(index: Int) {
+            switch index {
+            case 0:
+                self = .add
+            case 1:
+                self = .sub
+            case 2:
+                self = .mul
+            case 3:
+                self = .div
+            default:
+                return nil
+            }
+        }
+    }
+
+    // +, -, *, /
+    let segmentedControl = UISegmentedControl()
+
+    @IBAction func didTapButton() {
+        let ope = Operator(
+            index: segmentedControl.selectedSegmentIndex
+        )!
+
+        // 以下、opeを使う
+        // ・
+        // ・
+        // ・
+    }
+}
